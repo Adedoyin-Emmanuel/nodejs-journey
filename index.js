@@ -31,7 +31,7 @@ app.get("/api/courses", (req, res) => {
     },
 
     {
-      id: 3,
+      id: 3, 
       courseName: "NodeJS for dummies",
     },
 

@@ -14,6 +14,7 @@ Some people inspired me to learn NodeJs, most of them don't know but I am super 
 6. Joseph
 7. Agu christopher
 8. Chris (heischris)
+9. Kachi (cosmoduck)
 
 And my other nodeJs developers. I would finally be able to collaborate with you guys on any backend project. :)
 
