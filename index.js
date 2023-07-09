@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use("/api/books", books);
+app.use(express.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
   res.send(200, "Emmysoft");

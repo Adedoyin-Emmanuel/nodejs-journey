@@ -33,7 +33,7 @@ const books = [
 ];
 
 Router.get("/", (req, res) => {
-  res.json(200, "Hello from books endpoint");
+  res.status(200).json(books);
 });
 
 module.exports = Router;
