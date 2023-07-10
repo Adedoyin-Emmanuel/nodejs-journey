@@ -36,4 +36,18 @@ Router.get("/", (req, res) => {
   res.status(200).json(books);
 });
 
+Router.post("/", (req, res) => {
+ // const { id, name } = req;
+  
+  console.log(req);
+});
+
+Router.put("/", (req, res) =>{
+
+});
+
+Router.delete("/", (req, res) =>{
+
+
+});
 module.exports = Router;
