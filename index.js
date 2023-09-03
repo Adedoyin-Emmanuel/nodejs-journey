@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bookModel = require("./models/book.model");
 
 const bookSchema = mongoose.Schema({
   id: { type: "string", unique: true },
