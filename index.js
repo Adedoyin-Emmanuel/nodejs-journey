@@ -12,6 +12,7 @@ const mongoose = require("mongoose");
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.use("/", homeRoute);
 app.use("/api/books", bookRoute);
