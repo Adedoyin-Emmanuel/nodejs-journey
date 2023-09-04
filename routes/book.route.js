@@ -1,36 +1,30 @@
 const express = require("express");
 const router = express.Router();
+const { BookController } = require("./../controllers/");
 
-const books = [
-  {
-    id: 1,
-    name: "HTML5 for beginners",
-  },
+/*getting all books */
+router.get("/", (req, res) => {
+  BookController.getAll(req, res);
+});
 
-  {
-    id: 2,
-    name: "Javascript for beginners",
-  },
+/*getting books by id*/
+router.get("/:id", (req, res) => {
+  BookController.getById(req, res);
+});
 
-  {
-    id: 3,
-    name: "PHP for beginners",
-  },
+/*creating a new book*/
+router.post("/", (req, res) => {
+  BookController.create(req, res);
+});
 
-  {
-    id: 4,
-    name: "C++ for dummies",
-  },
+/*updating a book*/
+router.put("/:id", (req, res) => {
+  BookController.update(req, res);
+});
 
-  {
-    id: 5,
-    name: "Java for babies",
-  },
-];
-
-router.get("/", (req, res, next) => {
-  res.status(200).json(books);
-  next();
+/*deleting a book*/
+router.delete("/:id", (req, res) => {
+  BookController.delete(req, res);
 });
 
 module.exports = router;
