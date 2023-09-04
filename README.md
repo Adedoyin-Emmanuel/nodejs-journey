@@ -32,4 +32,5 @@ And my other nodeJs developers. I would finally be able to collaborate with you 
 
 ## What I Would Be Building 🏠
 
-I would be building a backend API for a book website, users can signup, download books, pin books to their library and all those good stuff. Admins can add books and all, admins can also add moderators to do stuffs on their behalf
+I would be building a backend API for a book website, users can signup, download books, pin books to their library and all those good stuff. Admins can add books and all, admins can also add moderators to do stuffs on their behalf.
+To take this to the next level, I would add a platform for payment where users can buy premium books and integrate Paystack API for payments. That would widen my understanding about backend development and building API's in general
