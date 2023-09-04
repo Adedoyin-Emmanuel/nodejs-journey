@@ -8,9 +8,10 @@ const { homeRoute, bookRoute } = require("./routes/index");
 
 app.use(helmet());
 app.use(express.json());
-app.use(homeRoute);
-app.use(bookRoute);
 
-app.listen(() => {
+app.use("/", homeRoute);
+app.use("/api/books", bookRoute);
+
+app.listen(PORT, () => {
   debug(`App Listening On PORT ${PORT}`);
 });

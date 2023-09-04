@@ -1,7 +1,7 @@
 const express = require("express");
-const Router = express.Router();
+const router = express.Router();
 
-Router.use((req, res, next) => {
+router.use((req, res, next) => {
   next();
 });
 
@@ -32,11 +32,10 @@ const books = [
   },
 ];
 
-Router.get("/", (req, res) => {
+router.get("/", (req, res) => {
   res.status(200).json(books);
 });
 
-
 module.exports = {
   router,
-}
+};
