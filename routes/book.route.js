@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-
 const books = [
   {
     id: 1,
@@ -29,10 +28,9 @@ const books = [
   },
 ];
 
-router.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
   res.status(200).json(books);
+  next();
 });
 
-module.exports = {
-  router,
-};
+module.exports = router;
