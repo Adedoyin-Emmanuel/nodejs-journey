@@ -1,4 +1,4 @@
-const response = (res, code, message, result) => {
+const response = (res, code, message, data) => {
   if (!res) throw new Error("Response not defined");
 
   const httpStatusText = {
@@ -66,12 +66,13 @@ const response = (res, code, message, result) => {
     510: "Not Extended",
     511: "Network Authentication Required",
   };
+  
   const statusText = httpStatusText[code] || "Unknown Status";
   res.status(code).send({
     code: code,
     status: statusText,
     message: message || "Empty response",
-    result: result || {},
+    data: data || {},
   });
 };
 
